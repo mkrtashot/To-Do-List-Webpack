@@ -1,5 +1,5 @@
 import { todoInput, todoButton, todoList } from "./selectors";
-import { styles } from "../css/index.css";
+import { styles } from "./index.css";
 
 function addTodo(event) {
   event.preventDefault();
