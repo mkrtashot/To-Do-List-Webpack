@@ -1,3 +1,6 @@
+import { todoInput, todoButton, todoList } from "./selectors";
+import { styles } from "../css/index.css";
+
 function addTodo(event) {
   event.preventDefault();
   if (todoInput.value !== "") {
@@ -49,3 +52,6 @@ function deleteCheck(event) {
     todo.classList.toggle("completed");
   }
 }
+
+todoButton.addEventListener("click", addTodo);
+todoList.addEventListener("click", deleteCheck);
